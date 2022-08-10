@@ -28,7 +28,6 @@ export const lightTheme = createTheme({
   },
   cardVariants: {
     defaults: {
-      bg: 'purpleLight',
       padding: {
         phone: 's',
         tablet: 'm',

@@ -1,3 +1,3 @@
-export { Box } from './box'
-export { Card } from './card'
-export { Text } from './text'
+export * from './box'
+export * from './card'
+export * from './text'
