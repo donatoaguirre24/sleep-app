@@ -3,17 +3,17 @@ import { Platform } from 'react-native'
 
 export const lightTheme = createTheme({
   colors: {
-    purpleLight: '#9B6DFF',
-    purplePrimary: '#5A31F4',
-    purpleDark: '#3F22AB',
-    greenLight: '#56DCBA',
-    greenPrimary: '#0ECD9D',
-    greenDark: '#0A906E',
     black: '#000000',
-    gray: '#E2E8F0',
+    cyan: '#4793FF',
+    gray: '#CCCCCC',
+    green: '#0ECD9D',
+    orange: '#FFB347',
+    purple: '#FF47EF',
+    red: '#FF5747',
     white: '#FFFFFF',
-    background: '#FAFAFA',
-    foreground: '#000000',
+    background: '#F2F2F2',
+    text: '#1C1C1E',
+    card: '#FFFFFF',
   },
   spacing: {
     xs: 4,
@@ -39,7 +39,7 @@ export const lightTheme = createTheme({
       borderWidth: Platform.select({ android: 1, ios: 0 }),
       // iOS
       shadowColor: 'black',
-      shadowOpacity: 0.4,
+      shadowOpacity: 0.25,
       shadowOffset: {
         height: 3,
         width: 1,
@@ -51,19 +51,20 @@ export const lightTheme = createTheme({
     header: {
       fontWeight: 'bold',
       fontSize: 24,
-      lineHeight: 32,
-      color: 'foreground',
+      lineHeight: 30,
+      color: 'text',
     },
     subheader: {
       fontWeight: '600',
-      fontSize: 28,
-      lineHeight: 36,
-      color: 'foreground',
+      fontSize: 20,
+      lineHeight: 26,
+      color: 'text',
     },
     defaults: {
-      fontSize: 16,
-      lineHeight: 24,
-      color: 'foreground',
+      fontWeight: 'normal',
+      fontSize: 12,
+      lineHeight: 18,
+      color: 'text',
     },
   },
 })
@@ -72,8 +73,9 @@ export const darkTheme: Theme = {
   ...lightTheme,
   colors: {
     ...lightTheme.colors,
-    background: '#111111',
-    foreground: '#FFFFFF',
+    background: '#010101',
+    text: '#E5E5E7',
+    card: '#1F1F1F',
   },
 }
 

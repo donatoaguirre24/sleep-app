@@ -4,19 +4,17 @@ import { SafeAreaView } from 'react-native'
 import { Card, Text } from '@/components'
 import { SleepDetailsRouteProp } from '@/navigation'
 
-type ChartProps = {
+type Props = {
   route: SleepDetailsRouteProp
 }
 
-export const Chart: React.FC<ChartProps> = ({ route }) => {
-  const userId = route.params.userId
+export const Chart: React.FC<Props> = ({ route }) => {
+  const intervalId = route.params.intervalId
 
   return (
     <SafeAreaView>
-      <Card backgroundColor="greenLight" borderRadius={5} margin="m" height={200} />
-      <Text color="foreground" textAlign="center">
-        {`Sleep Data for ${userId}`}
-      </Text>
+      <Card backgroundColor="green" borderRadius={5} margin="m" height={200} />
+      <Text textAlign="center">{`Sleep data for interval: ${intervalId}`}</Text>
     </SafeAreaView>
   )
 }

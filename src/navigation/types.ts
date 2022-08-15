@@ -2,13 +2,13 @@ import type { RouteProp } from '@react-navigation/native'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 
 export enum Screens {
-  FamilyView = 'Family',
+  FamilyView = 'Sharing',
   SleepDetails = 'Sleep Details',
 }
 
 export type RootStackParamList = {
   [Screens.FamilyView]: undefined
-  [Screens.SleepDetails]: { userId: string }
+  [Screens.SleepDetails]: { intervalId: string }
 }
 
 export type NavigationProps = NativeStackScreenProps<

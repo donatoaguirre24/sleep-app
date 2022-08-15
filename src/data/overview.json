@@ -1,0 +1,98 @@
+[
+  {
+    "date": "2017-03-09",
+    "data": [
+      {
+        "intervalId": "1489046760",
+        "userId": "2228b530e055401f81ba37b51ff6f81d",
+        "name": "John Doe",
+        "averageHeartRate": 84,
+        "averageRespiratoryRate": 17,
+        "score": 44,
+        "timeAsleep": 22380
+      },
+      {
+        "intervalId": "1489036920",
+        "userId": "d6c1355e38194139b8d0c870baf86365",
+        "name": "Jane Doe",
+        "averageHeartRate": 52,
+        "averageRespiratoryRate": 14,
+        "score": 77,
+        "timeAsleep": 23760
+      },
+      {
+        "intervalId": "1489037100",
+        "userId": "f9bf229fd19e4c799e8c19a962d73449",
+        "name": "Jack Doe",
+        "averageHeartRate": 57,
+        "averageRespiratoryRate": 13,
+        "score": 76,
+        "timeAsleep": 26340
+      }
+    ]
+  },
+  {
+    "date": "2017-03-08",
+    "data": [
+      {
+        "intervalId": "1488955980",
+        "userId": "2228b530e055401f81ba37b51ff6f81d",
+        "name": "John Doe",
+        "averageHeartRate": 76,
+        "averageRespiratoryRate": 17,
+        "score": 58,
+        "timeAsleep": 27420
+      },
+      {
+        "intervalId": "1488934980",
+        "userId": "d6c1355e38194139b8d0c870baf86365",
+        "name": "Jane Doe",
+        "averageHeartRate": 52,
+        "averageRespiratoryRate": 13,
+        "score": 91,
+        "timeAsleep": 35220
+      },
+      {
+        "intervalId": "1488938820",
+        "userId": "f9bf229fd19e4c799e8c19a962d73449",
+        "name": "Jack Doe",
+        "averageHeartRate": 52,
+        "averageRespiratoryRate": 13,
+        "score": 82,
+        "timeAsleep": 45180
+      }
+    ]
+  },
+  {
+    "date": "2017-03-07",
+    "data": [
+      {
+        "intervalId": "1488878640",
+        "userId": "2228b530e055401f81ba37b51ff6f81d",
+        "name": "John Doe",
+        "averageHeartRate": 71,
+        "averageRespiratoryRate": 17,
+        "score": 47,
+        "timeAsleep": 18780
+      },
+      {
+        "intervalId": "1488853740",
+        "userId": "d6c1355e38194139b8d0c870baf86365",
+        "name": "Jane Doe",
+        "averageHeartRate": 51,
+        "averageRespiratoryRate": 13,
+        "score": 95,
+        "timeAsleep": 34380
+      },
+      {
+        "intervalId": "1488856380",
+        "userId": "f9bf229fd19e4c799e8c19a962d73449",
+        "name": "Jack Doe",
+        "averageHeartRate": 56,
+        "averageRespiratoryRate": 13,
+        "score": 86,
+        "timeAsleep": 31080
+      }
+    ]
+  }
+]

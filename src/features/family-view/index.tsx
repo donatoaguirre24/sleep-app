@@ -1,1 +1,1 @@
-export { IndividualsList as FamilyView } from './individuals-list'
+export { List as FamilyView } from './list'

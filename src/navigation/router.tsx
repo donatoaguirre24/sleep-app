@@ -2,17 +2,16 @@ import { DarkTheme, DefaultTheme, NavigationContainer } from '@react-navigation/
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import React from 'react'
 
-import { Text } from '@/components'
 import { FamilyView, SleepDetails } from '@/features'
 import { RootStackParamList, Screens } from './types'
 
 const Stack = createNativeStackNavigator<RootStackParamList>()
 
-type RouterProps = {
+interface Props {
   isDarkMode: boolean
 }
 
-export const Router: React.FC<RouterProps> = ({ isDarkMode }) => {
+export const Router: React.FC<Props> = ({ isDarkMode }) => {
   return (
     <NavigationContainer theme={isDarkMode ? DarkTheme : DefaultTheme}>
       <Stack.Navigator
@@ -29,10 +28,9 @@ export const Router: React.FC<RouterProps> = ({ isDarkMode }) => {
         <Stack.Screen
           name={Screens.SleepDetails}
           component={SleepDetails}
-          options={({ navigation, route }) => ({
+          options={({ route }) => ({
             presentation: 'modal',
-            title: route.params.userId,
-            headerRight: () => <Text onPress={navigation.goBack}>Done</Text>,
+            // title: route.params.userId,
           })}
         />
       </Stack.Navigator>
