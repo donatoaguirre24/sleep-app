@@ -8,7 +8,7 @@ type Props = BoxProps<Theme> & {
   rawDate: string
 }
 
-export const SectionHeader: React.FC<Props> = ({ rawDate, ...props }) => {
+export const OverviewSectionHeader: React.FC<Props> = ({ rawDate, ...props }) => {
   const date = new Date(rawDate)
   const formattedDate = date.toLocaleDateString('en-US')
 

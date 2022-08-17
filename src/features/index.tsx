@@ -1,2 +1,2 @@
-export { FamilyView } from './family-view'
+export { FamilyOverview } from './family-overview'
 export { SleepDetails } from './sleep-details'

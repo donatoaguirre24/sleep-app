@@ -4,7 +4,7 @@ import { Platform } from 'react-native'
 export const lightTheme = createTheme({
   colors: {
     black: '#000000',
-    cyan: '#4793FF',
+    blue: '#32ADE6',
     gray: '#CCCCCC',
     green: '#0ECD9D',
     orange: '#FFB347',
@@ -34,7 +34,7 @@ export const lightTheme = createTheme({
       },
     },
     elevated: {
-      // Android (elevation does not look good and is not enough customizable)
+      // Android (elevation does not look good and is not customizable enough)
       borderColor: 'gray',
       borderWidth: Platform.select({ android: 1, ios: 0 }),
       // iOS
