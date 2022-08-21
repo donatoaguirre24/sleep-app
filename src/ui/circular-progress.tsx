@@ -3,8 +3,9 @@ import React from 'react'
 import { StyleSheet } from 'react-native'
 import Svg, { Circle } from 'react-native-svg'
 
-import { Box, Text } from '@/components'
-import { Theme } from '@/theme'
+import { Box } from './box'
+import { Text } from './text'
+import { Theme } from './theme'
 
 type Props = BoxProps<Theme> & {
   color: string

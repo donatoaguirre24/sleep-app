@@ -43,6 +43,8 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   bridge.surfacePresenter = _bridgeAdapter.surfacePresenter;
 #endif
 
+  [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+
   NSDictionary *initProps = [self prepareInitialProps];
   UIView *rootView = RCTAppSetupDefaultRootView(bridge, @"EightSleep", initProps);
   rootView.backgroundColor = [UIColor systemBackgroundColor];
@@ -52,7 +54,13 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+
   return YES;
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+  [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
 }
 
 /// This method controls whether the `concurrentRoot`feature of React18 is turned on or off.
