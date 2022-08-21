@@ -2,14 +2,14 @@ import { useTheme } from '@shopify/restyle'
 import React from 'react'
 import { SectionList } from 'react-native'
 
-import { Theme } from '@/theme'
+import { Theme } from '@/ui'
 import { OverviewCard } from './overview-card'
 import { OverviewSectionHeader } from './overview-section-header'
-import { DailyFamilyOverview } from './types'
+import { DailyFamilyOverview, SleepIntervalOverview } from './types'
 
 type Props = {
   data: Array<DailyFamilyOverview>
-  onSelection: (id: string) => void
+  onSelection: (data: SleepIntervalOverview) => void
 }
 
 export const OverviewList: React.FC<Props> = ({ data, onSelection }) => {
@@ -17,15 +17,15 @@ export const OverviewList: React.FC<Props> = ({ data, onSelection }) => {
 
   return (
     <SectionList
-      contentContainerStyle={{ paddingBottom: spacing.m }}
+      contentContainerStyle={{ paddingBottom: spacing.m, paddingHorizontal: spacing.m }}
       contentInsetAdjustmentBehavior="automatic"
       keyExtractor={(item, index) => item.userId + index}
       sections={data}
       renderItem={({ item }) => (
-        <OverviewCard marginBottom="m" marginHorizontal="m" data={item} onSelection={onSelection} />
+        <OverviewCard marginBottom="m" data={item} onSelection={onSelection} />
       )}
       renderSectionHeader={({ section }) => (
-        <OverviewSectionHeader paddingHorizontal="m" paddingVertical="s" rawDate={section.date} />
+        <OverviewSectionHeader paddingVertical="s" rawDate={section.date} />
       )}
     />
   )

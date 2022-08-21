@@ -1,23 +1,19 @@
 import React, { useCallback } from 'react'
-import { SafeAreaView } from 'react-native'
 
-import data from '@/data/overview.json'
-import { NavigationProps, Screens } from '@/navigation'
+import { overviewData } from '@/data'
+import { FamilyViewStackProps, Screens } from '@/navigation'
 import { OverviewList } from './overview-list'
+import { SleepIntervalOverview } from './types'
 
-export const FamilyOverview: React.FC<NavigationProps> = ({ navigation }) => {
+export const FamilyOverview: React.FC<FamilyViewStackProps> = ({ navigation }) => {
   const { navigate } = navigation
 
   const showSleepData = useCallback(
-    (intervalId: string) => {
-      navigate(Screens.SleepDetails, { intervalId })
+    (sleepOverviewData: SleepIntervalOverview) => {
+      navigate(Screens.SleepDetails, sleepOverviewData)
     },
     [navigate]
   )
 
-  return (
-    <SafeAreaView>
-      <OverviewList data={data} onSelection={showSleepData} />
-    </SafeAreaView>
-  )
+  return <OverviewList data={overviewData} onSelection={showSleepData} />
 }

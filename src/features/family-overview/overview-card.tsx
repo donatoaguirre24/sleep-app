@@ -2,38 +2,35 @@ import { useTheme } from '@shopify/restyle'
 import React, { useMemo } from 'react'
 import { Pressable, PressableStateCallbackType } from 'react-native'
 
-import { Box, Card, CardProps, CircularProgress, Text } from '@/components'
 import { strings } from '@/locales'
-import { Theme } from '@/theme'
+import { getTimeFromSeconds } from '@/services'
+import { Box, Card, CardProps, CircularProgress, Text, Theme } from '@/ui'
 import { SleepIntervalOverview } from './types'
 
 type Props = CardProps & {
   data: SleepIntervalOverview
-  onSelection: (id: string) => void
+  onSelection: (data: SleepIntervalOverview) => void
 }
 
 export const OverviewCard: React.FC<Props> = ({ data, onSelection, ...props }) => {
-  const theme = useTheme<Theme>()
-
-  const { green, orange, red } = theme.colors
+  const { colors } = useTheme<Theme>()
   const { hours, minutes } = getTimeFromSeconds(data.timeAsleep)
 
-  const timeAsleep = `${hours}${strings.hoursShort} ${minutes}${strings.minutesShort}`
-  const averageBpm = `${data.averageHeartRate}${strings.bpm}`
-  const averageBrPM = `${data.averageRespiratoryRate}${strings.BrPM}`
+  const timeAsleep = `${hours}${strings.common.hoursShort} ${minutes}${strings.common.minutesShort} ${strings.common.asleep}`
+  const averageBpm = `${data.averageHeartRate}${strings.common.bpm} (${strings.common.averageShort})`
 
   const scoreColor = useMemo(() => {
     if (data.score < 50) {
-      return red
+      return colors.red
     }
     if (data.score < 75) {
-      return orange
+      return colors.orange
     }
-    return green
-  }, [data.score, green, orange, red])
+    return colors.green
+  }, [data.score, colors])
 
   const handlePress = () => {
-    onSelection(data.intervalId)
+    onSelection(data)
   }
 
   const computeStylesFromState = ({ pressed }: PressableStateCallbackType) => ({
@@ -45,9 +42,9 @@ export const OverviewCard: React.FC<Props> = ({ data, onSelection, ...props }) =
     <Pressable onPress={handlePress} style={computeStylesFromState}>
       <Card
         backgroundColor="card"
-        borderRadius={8}
         flexDirection="row"
         alignItems="center"
+        variant="elevated"
         paddingVertical="m"
         {...props}
       >
@@ -57,26 +54,21 @@ export const OverviewCard: React.FC<Props> = ({ data, onSelection, ...props }) =
           color={scoreColor}
           percentage={data.score}
           size={65}
-          strokeWidth={4}
+          strokeWidth={5}
         />
-        <Box flex={2}>
+        <Box flex={3}>
           <Text variant="subheader" marginBottom="s">
             {data.name}
           </Text>
           <Box flexDirection="row">
             <Box flex={1}>
-              <Text color="purple" fontWeight="600">
+              <Text color="secondaryGray" fontWeight="600">
                 {timeAsleep}
               </Text>
             </Box>
             <Box flex={1} paddingLeft="s">
-              <Text color="red" fontWeight="600">
-                {averageBpm}
-              </Text>
-            </Box>
-            <Box flex={1} paddingLeft="s">
-              <Text color="blue" fontWeight="600">
-                {averageBrPM}
+              <Text color="magenta" fontWeight="600">
+                ♥ {averageBpm}
               </Text>
             </Box>
           </Box>
@@ -84,15 +76,4 @@ export const OverviewCard: React.FC<Props> = ({ data, onSelection, ...props }) =
       </Card>
     </Pressable>
   )
-}
-
-function getTimeFromSeconds(seconds: number) {
-  const dateString = new Date(seconds * 1000).toISOString()
-  const hours = dateString.substring(11, 13)
-  const minutes = dateString.substring(14, 16)
-
-  return {
-    hours,
-    minutes,
-  }
 }

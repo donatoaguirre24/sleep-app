@@ -1,4 +1,4 @@
-import type { RouteProp } from '@react-navigation/native'
+import { SleepIntervalOverview } from '@/features/family-overview/types'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 
 export enum Screens {
@@ -8,15 +8,15 @@ export enum Screens {
 
 export type RootStackParamList = {
   [Screens.FamilyOverview]: undefined
-  [Screens.SleepDetails]: { intervalId: string }
+  [Screens.SleepDetails]: SleepIntervalOverview
 }
 
-export type NavigationProps = NativeStackScreenProps<
+export type FamilyViewStackProps = NativeStackScreenProps<
   RootStackParamList,
-  Screens.FamilyOverview,
-  Screens.SleepDetails
+  Screens.FamilyOverview
 >
 
-export type FamilyViewRouteProp = RouteProp<RootStackParamList, Screens.FamilyOverview>
-
-export type SleepDetailsRouteProp = RouteProp<RootStackParamList, Screens.SleepDetails>
+export type SleepDetailsStackProps = NativeStackScreenProps<
+  RootStackParamList,
+  Screens.SleepDetails
+>
