@@ -25,7 +25,7 @@ export const OverviewList: React.FC<Props> = ({ data, onSelection }) => {
         <OverviewCard marginBottom="m" data={item} onSelection={onSelection} />
       )}
       renderSectionHeader={({ section }) => (
-        <OverviewSectionHeader paddingVertical="s" rawDate={section.date} />
+        <OverviewSectionHeader paddingVertical="s" date={section.date} />
       )}
     />
   )

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OverviewSectionHeader renders correctly 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#F2F2F2",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1C1C1E",
+            "fontSize": 20,
+            "fontWeight": "600",
+            "lineHeight": 26,
+          },
+        ]
+      }
+    >
+      March 9, 2017
+    </Text>
+  </View>
+</RNCSafeAreaProvider>
+`;

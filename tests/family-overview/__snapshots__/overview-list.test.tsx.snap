@@ -1,0 +1,994 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OverviewList renders correctly 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <RCTScrollView
+    contentContainerStyle={
+      Object {
+        "paddingBottom": 16,
+        "paddingHorizontal": 16,
+      }
+    }
+    contentInsetAdjustmentBehavior="automatic"
+    data={
+      Array [
+        Object {
+          "data": Array [
+            Object {
+              "averageHeartRate": 84,
+              "averageRespiratoryRate": 17,
+              "intervalId": "1489046760",
+              "name": "John Doe",
+              "score": 44,
+              "timeAsleep": 22380,
+              "userId": "2228b530e055401f81ba37b51ff6f81d",
+            },
+            Object {
+              "averageHeartRate": 52,
+              "averageRespiratoryRate": 14,
+              "intervalId": "1489036920",
+              "name": "Jane Doe",
+              "score": 77,
+              "timeAsleep": 23760,
+              "userId": "d6c1355e38194139b8d0c870baf86365",
+            },
+            Object {
+              "averageHeartRate": 57,
+              "averageRespiratoryRate": 13,
+              "intervalId": "1489037100",
+              "name": "Jack Doe",
+              "score": 76,
+              "timeAsleep": 26340,
+              "userId": "f9bf229fd19e4c799e8c19a962d73449",
+            },
+          ],
+          "date": "2017-03-09T08:06:00.000Z",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={
+      Array [
+        0,
+      ]
+    }
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#F2F2F2",
+                "paddingVertical": 8,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#1C1C1E",
+                  "fontSize": 20,
+                  "fontWeight": "600",
+                  "lineHeight": 26,
+                },
+              ]
+            }
+          >
+            March 9, 2017
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "scale": 1,
+                },
+              ],
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#FFFFFF",
+                  "flexDirection": "row",
+                  "marginBottom": 16,
+                  "paddingVertical": 16,
+                },
+                Array [
+                  Object {
+                    "borderColor": "#CCCCCC",
+                    "borderRadius": 8,
+                    "borderWidth": 0,
+                    "padding": 8,
+                    "shadowColor": "#CCCCCC",
+                    "shadowOffset": Object {
+                      "height": 3,
+                      "width": 1,
+                    },
+                    "shadowOpacity": 0.5,
+                    "shadowRadius": 4,
+                  },
+                ],
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "marginRight": 8,
+                  },
+                ]
+              }
+            >
+              <RNSVGSvgView
+                align="xMidYMid"
+                bbHeight="65"
+                bbWidth="65"
+                focusable={false}
+                height={65}
+                meetOrSlice={0}
+                minX={0}
+                minY={0}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                      "borderWidth": 0,
+                    },
+                    Object {
+                      "flex": 0,
+                      "height": 65,
+                      "width": 65,
+                    },
+                  ]
+                }
+                vbHeight={65}
+                vbWidth={65}
+                width={65}
+              >
+                <RNSVGGroup>
+                  <RNSVGCircle
+                    cx="50%"
+                    cy="50%"
+                    fill={
+                      Object {
+                        "type": 0,
+                        "value": 0,
+                      }
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                        "strokeOpacity",
+                      ]
+                    }
+                    r="30"
+                    stroke={
+                      Object {
+                        "type": 0,
+                        "value": 4294924103,
+                      }
+                    }
+                    strokeOpacity={0.2}
+                    strokeWidth="5"
+                  />
+                  <RNSVGCircle
+                    cx="50%"
+                    cy="50%"
+                    fill={
+                      Object {
+                        "type": 0,
+                        "value": 0,
+                      }
+                    }
+                    matrix={
+                      Array [
+                        6.123233995736766e-17,
+                        -1,
+                        1,
+                        6.123233995736766e-17,
+                        0,
+                        65,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                        "strokeLinecap",
+                      ]
+                    }
+                    r="30"
+                    stroke={
+                      Object {
+                        "type": 0,
+                        "value": 4294924103,
+                      }
+                    }
+                    strokeDasharray={
+                      Array [
+                        "82.93804605477052",
+                        "105.55751316061705",
+                      ]
+                    }
+                    strokeLinecap={1}
+                    strokeWidth="5"
+                  />
+                </RNSVGGroup>
+              </RNSVGSvgView>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#1C1C1E",
+                        "fontSize": 15,
+                        "fontWeight": "bold",
+                        "lineHeight": 18,
+                        "textAlign": "center",
+                      },
+                      Object {
+                        "color": "#FF5747",
+                      },
+                    ]
+                  }
+                >
+                  44
+                  %
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flex": 3,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1C1C1E",
+                      "fontSize": 20,
+                      "fontWeight": "600",
+                      "lineHeight": 26,
+                      "marginBottom": 8,
+                    },
+                  ]
+                }
+              >
+                John Doe
+              </Text>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "flexDirection": "row",
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#5E5E5E",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "lineHeight": 18,
+                        },
+                      ]
+                    }
+                  >
+                    6h 13m asleep
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                        "paddingLeft": 8,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FF006A",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "lineHeight": 18,
+                        },
+                      ]
+                    }
+                  >
+                    ♥ 
+                    84bpm (avg)
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "scale": 1,
+                },
+              ],
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#FFFFFF",
+                  "flexDirection": "row",
+                  "marginBottom": 16,
+                  "paddingVertical": 16,
+                },
+                Array [
+                  Object {
+                    "borderColor": "#CCCCCC",
+                    "borderRadius": 8,
+                    "borderWidth": 0,
+                    "padding": 8,
+                    "shadowColor": "#CCCCCC",
+                    "shadowOffset": Object {
+                      "height": 3,
+                      "width": 1,
+                    },
+                    "shadowOpacity": 0.5,
+                    "shadowRadius": 4,
+                  },
+                ],
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "marginRight": 8,
+                  },
+                ]
+              }
+            >
+              <RNSVGSvgView
+                align="xMidYMid"
+                bbHeight="65"
+                bbWidth="65"
+                focusable={false}
+                height={65}
+                meetOrSlice={0}
+                minX={0}
+                minY={0}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                      "borderWidth": 0,
+                    },
+                    Object {
+                      "flex": 0,
+                      "height": 65,
+                      "width": 65,
+                    },
+                  ]
+                }
+                vbHeight={65}
+                vbWidth={65}
+                width={65}
+              >
+                <RNSVGGroup>
+                  <RNSVGCircle
+                    cx="50%"
+                    cy="50%"
+                    fill={
+                      Object {
+                        "type": 0,
+                        "value": 0,
+                      }
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                        "strokeOpacity",
+                      ]
+                    }
+                    r="30"
+                    stroke={
+                      Object {
+                        "type": 0,
+                        "value": 4279160221,
+                      }
+                    }
+                    strokeOpacity={0.2}
+                    strokeWidth="5"
+                  />
+                  <RNSVGCircle
+                    cx="50%"
+                    cy="50%"
+                    fill={
+                      Object {
+                        "type": 0,
+                        "value": 0,
+                      }
+                    }
+                    matrix={
+                      Array [
+                        6.123233995736766e-17,
+                        -1,
+                        1,
+                        6.123233995736766e-17,
+                        0,
+                        65,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                        "strokeLinecap",
+                      ]
+                    }
+                    r="30"
+                    stroke={
+                      Object {
+                        "type": 0,
+                        "value": 4279160221,
+                      }
+                    }
+                    strokeDasharray={
+                      Array [
+                        "145.14158059584844",
+                        "43.353978619539134",
+                      ]
+                    }
+                    strokeLinecap={1}
+                    strokeWidth="5"
+                  />
+                </RNSVGGroup>
+              </RNSVGSvgView>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#1C1C1E",
+                        "fontSize": 15,
+                        "fontWeight": "bold",
+                        "lineHeight": 18,
+                        "textAlign": "center",
+                      },
+                      Object {
+                        "color": "#0ECD9D",
+                      },
+                    ]
+                  }
+                >
+                  77
+                  %
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flex": 3,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1C1C1E",
+                      "fontSize": 20,
+                      "fontWeight": "600",
+                      "lineHeight": 26,
+                      "marginBottom": 8,
+                    },
+                  ]
+                }
+              >
+                Jane Doe
+              </Text>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "flexDirection": "row",
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#5E5E5E",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "lineHeight": 18,
+                        },
+                      ]
+                    }
+                  >
+                    6h 36m asleep
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                        "paddingLeft": 8,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FF006A",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "lineHeight": 18,
+                        },
+                      ]
+                    }
+                  >
+                    ♥ 
+                    52bpm (avg)
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "scale": 1,
+                },
+              ],
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#FFFFFF",
+                  "flexDirection": "row",
+                  "marginBottom": 16,
+                  "paddingVertical": 16,
+                },
+                Array [
+                  Object {
+                    "borderColor": "#CCCCCC",
+                    "borderRadius": 8,
+                    "borderWidth": 0,
+                    "padding": 8,
+                    "shadowColor": "#CCCCCC",
+                    "shadowOffset": Object {
+                      "height": 3,
+                      "width": 1,
+                    },
+                    "shadowOpacity": 0.5,
+                    "shadowRadius": 4,
+                  },
+                ],
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "marginRight": 8,
+                  },
+                ]
+              }
+            >
+              <RNSVGSvgView
+                align="xMidYMid"
+                bbHeight="65"
+                bbWidth="65"
+                focusable={false}
+                height={65}
+                meetOrSlice={0}
+                minX={0}
+                minY={0}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                      "borderWidth": 0,
+                    },
+                    Object {
+                      "flex": 0,
+                      "height": 65,
+                      "width": 65,
+                    },
+                  ]
+                }
+                vbHeight={65}
+                vbWidth={65}
+                width={65}
+              >
+                <RNSVGGroup>
+                  <RNSVGCircle
+                    cx="50%"
+                    cy="50%"
+                    fill={
+                      Object {
+                        "type": 0,
+                        "value": 0,
+                      }
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                        "strokeOpacity",
+                      ]
+                    }
+                    r="30"
+                    stroke={
+                      Object {
+                        "type": 0,
+                        "value": 4279160221,
+                      }
+                    }
+                    strokeOpacity={0.2}
+                    strokeWidth="5"
+                  />
+                  <RNSVGCircle
+                    cx="50%"
+                    cy="50%"
+                    fill={
+                      Object {
+                        "type": 0,
+                        "value": 0,
+                      }
+                    }
+                    matrix={
+                      Array [
+                        6.123233995736766e-17,
+                        -1,
+                        1,
+                        6.123233995736766e-17,
+                        0,
+                        65,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                        "strokeLinecap",
+                      ]
+                    }
+                    r="30"
+                    stroke={
+                      Object {
+                        "type": 0,
+                        "value": 4279160221,
+                      }
+                    }
+                    strokeDasharray={
+                      Array [
+                        "143.25662500369455",
+                        "45.23893421169302",
+                      ]
+                    }
+                    strokeLinecap={1}
+                    strokeWidth="5"
+                  />
+                </RNSVGGroup>
+              </RNSVGSvgView>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#1C1C1E",
+                        "fontSize": 15,
+                        "fontWeight": "bold",
+                        "lineHeight": 18,
+                        "textAlign": "center",
+                      },
+                      Object {
+                        "color": "#0ECD9D",
+                      },
+                    ]
+                  }
+                >
+                  76
+                  %
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flex": 3,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1C1C1E",
+                      "fontSize": 20,
+                      "fontWeight": "600",
+                      "lineHeight": 26,
+                      "marginBottom": 8,
+                    },
+                  ]
+                }
+              >
+                Jack Doe
+              </Text>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "flexDirection": "row",
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#5E5E5E",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "lineHeight": 18,
+                        },
+                      ]
+                    }
+                  >
+                    7h 19m asleep
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flex": 1,
+                        "paddingLeft": 8,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FF006A",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "lineHeight": 18,
+                        },
+                      ]
+                    }
+                  >
+                    ♥ 
+                    57bpm (avg)
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      />
+    </View>
+  </RCTScrollView>
+</RNCSafeAreaProvider>
+`;
