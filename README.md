@@ -77,6 +77,7 @@ https://user-images.githubusercontent.com/20030075/185839036-805953a9-a060-40a5-
 
 - Add proper icons for the heart and respiratory rate
 - Include min and max values for health metrics (heart and respiratory rate)
+- Improve charts animations in Android
 - Fetch data from the network instead of using static data
 - Add app icon and splash screen
 - Add skeletons to handle loading states (if network requests were made)
