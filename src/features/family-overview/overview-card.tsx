@@ -1,6 +1,6 @@
 import { useTheme } from '@shopify/restyle'
 import React, { useMemo } from 'react'
-import { Pressable, PressableStateCallbackType } from 'react-native'
+import { Platform, Pressable, PressableStateCallbackType } from 'react-native'
 
 import { strings } from '@/locales'
 import { getTimeFromSeconds } from '@/services'
@@ -34,7 +34,7 @@ export const OverviewCard: React.FC<Props> = ({ data, onSelection, ...props }) =
   }
 
   const computeStylesFromState = ({ pressed }: PressableStateCallbackType) => ({
-    opacity: pressed ? 0.6 : 1,
+    opacity: pressed ? Platform.select({ android: 0.8, ios: 0.6 }) : 1,
     transform: [{ scale: pressed ? 0.98 : 1 }],
   })
 

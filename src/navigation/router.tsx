@@ -2,6 +2,7 @@ import { DarkTheme, DefaultTheme, NavigationContainer } from '@react-navigation/
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { useTheme } from '@shopify/restyle'
 import React from 'react'
+import { Platform } from 'react-native'
 
 import { FamilyOverview, SleepDetails } from '@/features'
 import { strings } from '@/locales'
@@ -28,6 +29,7 @@ export const Router: React.FC<Props> = ({ isDarkMode }) => {
             headerStyle: {
               backgroundColor: colors.background,
             },
+            headerTitleAlign: 'center',
             title: strings.familyOverview.header,
           }}
         />
@@ -39,7 +41,8 @@ export const Router: React.FC<Props> = ({ isDarkMode }) => {
             headerStyle: {
               backgroundColor: colors.background,
             },
-            presentation: 'modal',
+            headerTitleAlign: 'center',
+            presentation: Platform.OS === 'ios' ? 'modal' : 'card',
             title: strings.sleepDetails.header,
           }}
         />

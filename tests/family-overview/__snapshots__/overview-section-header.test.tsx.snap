@@ -26,9 +26,9 @@ exports[`OverviewSectionHeader renders correctly 1`] = `
         Array [
           Object {
             "color": "#1C1C1E",
-            "fontSize": 20,
+            "fontSize": 38.5,
             "fontWeight": "600",
-            "lineHeight": 26,
+            "lineHeight": 50,
           },
         ]
       }

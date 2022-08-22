@@ -21,9 +21,8 @@ exports[`HealthMetricCard renders correctly 1`] = `
         },
         Array [
           Object {
-            "borderColor": "#CCCCCC",
             "borderRadius": 8,
-            "borderWidth": 0,
+            "elevation": 4,
             "padding": 8,
             "shadowColor": "#CCCCCC",
             "shadowOffset": Object {
@@ -42,9 +41,9 @@ exports[`HealthMetricCard renders correctly 1`] = `
         Array [
           Object {
             "color": "#FF006A",
-            "fontSize": 16,
+            "fontSize": 31,
             "fontWeight": "bold",
-            "lineHeight": 18,
+            "lineHeight": 38.5,
           },
         ]
       }
@@ -55,9 +54,10 @@ exports[`HealthMetricCard renders correctly 1`] = `
       style={
         Array [
           Object {
-            "alignItems": "center",
+            "alignItems": "baseline",
             "flex": 1,
             "flexDirection": "row",
+            "paddingTop": 8,
           },
         ]
       }
@@ -67,29 +67,29 @@ exports[`HealthMetricCard renders correctly 1`] = `
           Array [
             Object {
               "color": "#1C1C1E",
-              "fontSize": 24,
+              "fontSize": 46,
               "fontWeight": "bold",
-              "lineHeight": 30,
+              "lineHeight": 57.5,
             },
           ]
         }
       >
         60
          
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#5E5E5E",
-                "fontSize": 16,
-                "fontWeight": "bold",
-                "lineHeight": 18,
-              },
-            ]
-          }
-        >
-          bpm (avg)
-        </Text>
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#5E5E5E",
+              "fontSize": 31,
+              "fontWeight": "bold",
+              "lineHeight": 38.5,
+            },
+          ]
+        }
+      >
+        bpm (avg)
       </Text>
     </View>
   </View>

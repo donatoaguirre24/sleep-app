@@ -1,5 +1,6 @@
 export * from './box'
 export * from './card'
 export * from './circular-progress'
+export * from './screen'
 export * from './text'
 export * from './theme'

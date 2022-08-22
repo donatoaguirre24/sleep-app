@@ -1,5 +1,5 @@
 import { createTheme } from '@shopify/restyle'
-import { Platform } from 'react-native'
+import { normalize } from './screen'
 
 export const lightTheme = createTheme({
   colors: {
@@ -38,42 +38,41 @@ export const lightTheme = createTheme({
       },
     },
     elevated: {
-      // Android (in this case elevation does not look good and is not customizable enough)
-      borderColor: 'cardShadow',
-      borderWidth: Platform.select({ android: 1, ios: 0 }),
+      // Android
+      elevation: 4,
       // iOS
       shadowColor: 'cardShadow',
       shadowOpacity: 0.5,
+      shadowRadius: 4,
       shadowOffset: {
         height: 3,
         width: 1,
       },
-      shadowRadius: 4,
     },
   },
   textVariants: {
     header: {
       fontWeight: 'bold',
-      fontSize: 24,
-      lineHeight: 30,
+      fontSize: normalize(24),
+      lineHeight: normalize(30),
       color: 'text',
     },
     subheader: {
       fontWeight: '600',
-      fontSize: 20,
-      lineHeight: 26,
+      fontSize: normalize(20),
+      lineHeight: normalize(26),
       color: 'text',
     },
     card: {
       fontWeight: 'bold',
-      fontSize: 16,
-      lineHeight: 18,
+      fontSize: normalize(16),
+      lineHeight: normalize(20),
       color: 'text',
     },
     defaults: {
       fontWeight: 'normal',
-      fontSize: 12,
-      lineHeight: 18,
+      fontSize: normalize(12),
+      lineHeight: normalize(18),
       color: 'text',
     },
   },

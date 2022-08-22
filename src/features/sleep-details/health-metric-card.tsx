@@ -16,12 +16,12 @@ export const HealthMetricCard: React.FC<Props> = ({ title, metric, unit, color, 
       <Text variant="card" color={color}>
         {title}
       </Text>
-      <Box flexDirection="row" alignItems="center" flex={1}>
+      <Box flexDirection="row" alignItems="baseline" flex={1} paddingTop="s">
         <Text variant="header" color="text">
           {metric}{' '}
-          <Text variant="card" color="secondaryGray">
-            {unit}
-          </Text>
+        </Text>
+        <Text variant="card" color="secondaryGray">
+          {unit}
         </Text>
       </Box>
     </Card>
