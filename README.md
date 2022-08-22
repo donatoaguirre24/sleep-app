@@ -4,7 +4,13 @@
 
 ### iOS
 
+https://user-images.githubusercontent.com/20030075/185938122-3c21ee4d-087e-48ba-ba23-29d3e78c3126.mov
+
 ### Android
+
+
+https://user-images.githubusercontent.com/20030075/185941564-961a3b3e-a69f-49e4-9fd1-edda2d4b4553.mov
+
 
 ### Tests & Linters
 
