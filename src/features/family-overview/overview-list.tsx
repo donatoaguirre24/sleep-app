@@ -17,15 +17,15 @@ export const OverviewList: React.FC<Props> = ({ data, onSelection }) => {
 
   return (
     <SectionList
-      contentContainerStyle={{ paddingBottom: spacing.m, paddingHorizontal: spacing.m }}
+      contentContainerStyle={{ paddingBottom: spacing.m }}
       contentInsetAdjustmentBehavior="automatic"
       keyExtractor={(item, index) => item.userId + index}
       sections={data}
       renderItem={({ item }) => (
-        <OverviewCard marginBottom="m" data={item} onSelection={onSelection} />
+        <OverviewCard marginBottom="m" marginHorizontal="m" data={item} onSelection={onSelection} />
       )}
       renderSectionHeader={({ section }) => (
-        <OverviewSectionHeader paddingVertical="s" date={section.date} />
+        <OverviewSectionHeader paddingVertical="s" paddingHorizontal="m" date={section.date} />
       )}
     />
   )

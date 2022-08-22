@@ -2,11 +2,9 @@
 
 ## ⏯ Demo
 
-### iOS App
+### iOS
 
-https://user-images.githubusercontent.com/20030075/185839036-805953a9-a060-40a5-bb84-c4ce6a19dd53.mp4
-
-### Android App
+### Android
 
 ### Tests & Linters
 
@@ -14,7 +12,7 @@ https://user-images.githubusercontent.com/20030075/185839036-805953a9-a060-40a5-
 
 ## 👨🏻‍💻 Technical Documentation
 
-### Development Environment
+### Setup
 
 - [Node.js 16](https://nodejs.org)
 - [Npm 8](https://www.npmjs.com)
@@ -27,6 +25,7 @@ https://user-images.githubusercontent.com/20030075/185839036-805953a9-a060-40a5-
 
 ### Run the App
 
+- Prerequisite: [setup your environment](#development-environment)
 - Install dependencies: `yarn && pod install --project-directory=ios`
 - Start metro server: `yarn start` (keep it running)
 - Launch iOS simulator: `yarn ios`
@@ -59,14 +58,13 @@ https://user-images.githubusercontent.com/20030075/185839036-805953a9-a060-40a5-
 
 ## 🔎 Research & Product
 
-### Inspiration sources
+### Inspiration Sources
 
 - [Apple Health](https://apps.apple.com/us/app/apple-health/id1242545199)
 - [Apple Fitness](https://apps.apple.com/us/app/fitness/id1208224953)
 - [Pillow](https://apps.apple.com/app/pillow-sleep-cycle-alarm-clock/id878691772)
 - [Eight Sleep](https://apps.apple.com/uy/app/eight-sleep/id1086913845)
 - [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/guidelines/overview)
-
 
 ### Biases
 
@@ -88,6 +86,4 @@ https://user-images.githubusercontent.com/20030075/185839036-805953a9-a060-40a5-
 
 I tried to create a rich yet simple visual experience. Since the goal of health/fitness app users is mostly to track and improve their performance, I focused on the charts and visual elements to make it easier.
 
-Given the time constrains and the fact that I was provided just with a detail/show endpoint but not with an overview/index one, I decided to use static data.
-
-Taking advantage of that, I created an "overview" file combining information from the three users' data and feeds the landing screen of the app.
+Given the time constrains and the fact that I was provided just with a detail/show endpoint but not with an overview/index one, I decided to use static data. To take advantage of it, I created an "overview" file combining information from the three users' data and feeds the landing screen of the app.
