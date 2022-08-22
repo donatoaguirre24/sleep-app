@@ -4,11 +4,13 @@
 
 ### iOS App
 
+https://user-images.githubusercontent.com/20030075/185839036-805953a9-a060-40a5-bb84-c4ce6a19dd53.mp4
+
 ### Android App
 
 ### Tests & Linters
 
-![Test and Linters Demo](./assets/tests-and-linters.png)
+<img width="658" alt="tests-and-linters demo" src="https://user-images.githubusercontent.com/20030075/185839145-6045c655-5bc7-41bd-a725-753dd226c7f9.png">
 
 ## 👨🏻‍💻 Technical Documentation
 
