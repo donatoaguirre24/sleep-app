@@ -8,6 +8,11 @@ export const en = {
     minutesShort: 'm',
     celsius: '°C',
   },
+  usersList: {
+    header: 'Users',
+    favorites: 'Favorites',
+    common: 'Common',
+  },
   familyOverview: {
     header: 'Sharing',
   },

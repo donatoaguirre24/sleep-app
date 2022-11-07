@@ -1,0 +1,37 @@
+[
+  {
+    "userId": "2228b530e055401f81ba37b51ff6f81d",
+    "name": "John Doe",
+    "isFavorite": true
+  },
+  {
+    "userId": "d6c1355e38194139b8d0c870baf86365",
+    "name": "Jane Doe",
+    "isFavorite": false
+  },
+  {
+    "userId": "f9bf229fd19e4c799e8c19a962d73449",
+    "name": "Jake Doe",
+    "isFavorite": false
+  },
+  {
+    "userId": "2228b530e055401f81ba37b51ff6f81d",
+    "name": "Zhen Doe",
+    "isFavorite": false
+  },
+  {
+    "userId": "d6c1355e38194139b8d0c870baf86365",
+    "name": "Donato Doe",
+    "isFavorite": false
+  },
+  {
+    "userId": "f9bf229fd19e4c799e8c19a962d73449",
+    "name": "Bob Doe",
+    "isFavorite": false
+  },
+  {
+    "userId": "2228b530e055401f81ba37b51ff6f81d",
+    "name": "Jeff Doe",
+    "isFavorite": false
+  }
+]

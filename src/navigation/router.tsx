@@ -4,7 +4,7 @@ import { useTheme } from '@shopify/restyle'
 import React from 'react'
 import { Platform } from 'react-native'
 
-import { FamilyOverview, SleepDetails } from '@/features'
+import { FamilyOverview, SleepDetails, UsersListScreen } from '@/features'
 import { strings } from '@/locales'
 import { Theme } from '@/ui'
 import { RootStackParamList, Screens } from './types'
@@ -20,7 +20,19 @@ export const Router: React.FC<Props> = ({ isDarkMode }) => {
 
   return (
     <NavigationContainer theme={isDarkMode ? DarkTheme : DefaultTheme}>
-      <Stack.Navigator initialRouteName={Screens.FamilyOverview}>
+      <Stack.Navigator initialRouteName={Screens.UsersList}>
+        <Stack.Screen
+          name={Screens.UsersList}
+          component={UsersListScreen}
+          options={{
+            headerShadowVisible: false,
+            headerStyle: {
+              backgroundColor: colors.background,
+            },
+            headerTitleAlign: 'center',
+            title: strings.usersList.header,
+          }}
+        />
         <Stack.Screen
           name={Screens.FamilyOverview}
           component={FamilyOverview}
